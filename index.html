@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Weather</title>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <main>
+        <nav id="navbar-example" class="navbar navbar-expand-lg py-5">
+            <div class="container">
+                <div class="d-flex align-items-center">
+                <img src="./imgs/logo@2x.png" alt="">
+                    <div class="logo">
+                    <a class="navbar-brand text-white" href="#">Weather</a>
+                    <p>tagline goes here</p>
+                </div>
+                </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link mx-2 active" aria-current="page" href="#home">Home</a>
+                  <a class="nav-link mx-2" href="#">News</a>
+                  <a class="nav-link mx-2" href="#">Live cameras</a>
+                  <a class="nav-link mx-2" href="#">Photos</a>
+                  <a class="nav-link mx-2" href="#contact">Contact</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <section id="home">
+            <div class="home">
+                <div class="container">
+                    <form class="find-location">
+                        <input id="search" type="text" placeholder="Find your location...">
+                        <input type="button" value="Find" id="submit">
+                    </form>
+                </div>
+            </div>
+          </section>
+          <section>
+            <div class="weather-table">
+                <div class="container">
+                    <div class="weather-container" >
+                        <div class="row" id="weather">
+                            <!-- <div class="today col-md-4">
+                                <div class="weather-header d-flex justify-content-between" id="today" >
+                                    <div class="day">Tuesday</div>
+                                    <div class="date">16April</div>
+                                </div>
+                                <div class="weather-content" id="current">
+                                    <div class="location">Cairo</div>
+                                    <div  class="degree d-flex align-items-center">
+                                        <div class="num">17<sup>o</sup>C</div>
+                                        <div class="weather-icon">
+                                            <img src="https://cdn.weatherapi.com/weather/64x64/day/143.png" alt="" width="90">
+                                        </div>
+                                    </div>
+                                    <div class="custom">Mist</div>
+                                    <span><img src="./imgs/icon-umberella.png" alt=""> 20%</span>
+                                    <span><img src="./imgs/icon-wind.png" alt=""> 18km/h</span>
+                                    <span><img src="./imgs/icon-compass.png" alt=""> East</span>
+                                </div>
+                            </div>
+                            <div class="tommorow col-md-4">
+                                <div class="weather-header">
+                                    <div class="day">Wednesday</div>
+                                </div>
+                                <div class="weather-content">
+                                    <div class="weather-icon">
+                                        <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" width="48">
+                                    </div>
+                                    <div class="degree">32.3<sup>o</sup>C</div>
+                                    <small>20.6<sup>o</sup></small>
+                                    <div class="custom">Sunny</div>
+                                </div>
+                            </div>
+                            <div class="tommorow col-md-4">
+                                <div class="weather-header">
+                                    <div class="day">Thursday</div>
+                                </div>
+                                <div class="weather-content">
+                                    <div class="weather-icon">
+                                        <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" width="48">
+                                    </div>
+                                    <div class="degree">32.3<sup>o</sup>C</div>
+                                    <small>20.6<sup>o</sup></small>
+                                    <div class="custom">Sunny</div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+          <footer id="contact">
+            <div class="container"> 
+                <div class="row">
+                    <div class="col-md-8">
+                        <form class="subscribe-form">
+                            <input type="text" placeholder="Enter your email to subscribe...">
+                            <input type="button" value="Subscribe">
+                        </form>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1 d-flex justify-content-md-end">
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+            </div>
+          </footer>
+    </main>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
