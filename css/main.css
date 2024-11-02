@@ -43,6 +43,26 @@ body
     border-radius: 30px;
     padding: 5px 25px !important; 
 }
+.navbar .navbar-toggler
+{
+    border: none;
+    outline: none;
+} 
+.navbar-toggler-icon
+{
+    background-color: white;
+    border-radius: inherit;
+    padding: 20px;
+    border: solid 2px #009ad8 ;
+}
+.navbar-toggler:focus
+{
+    box-shadow: none;
+}
+.navbar-nav a
+{
+    margin-block: 3px;
+}
 .home
 {
     background-image:url(../imgs/banner.png) ;
